@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechXchange 2024</title>
+    <title>Full Screen Image</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
+            background-color: #000;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <img src="image.png" alt="TechXchange 2024">
+    <img src="image.png" alt="Full Screen Image">
 </body>
 </html>
